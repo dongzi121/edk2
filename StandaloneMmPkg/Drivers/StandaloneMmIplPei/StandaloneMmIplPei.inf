@@ -23,6 +23,7 @@
 #
 
 [Sources]
+  StandaloneMmIplCommon.c
   StandaloneMmIplPei.c
   StandaloneMmIplPei.h
   MmFoundationHob.c
@@ -40,10 +41,13 @@
   HobLib
   MemoryAllocationLib
   MmUnblockMemoryLib
+  BaseLib
   BaseMemoryLib
   PeCoffLib
   CacheMaintenanceLib
+  PeiServicesTablePointerLib
   MmPlatformHobProducerLib
+  MmIplPlatformHookLib
 
 [Guids]
   gMmCommBufferHobGuid
@@ -58,6 +62,7 @@
   gMmUnblockRegionHobGuid
   gMmStatusCodeUseSerialHobGuid
   gEfiMmCommunicateHeaderV3Guid
+  gEfiHobMemoryAllocModuleGuid
 
 [Ppis]
   gEfiPeiMmControlPpiGuid
